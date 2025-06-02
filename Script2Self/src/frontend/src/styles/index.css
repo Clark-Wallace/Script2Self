@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #9c27b0, #03a9f4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.emotion-joy {
+  color: #FFD700;
+}
+
+.emotion-sadness {
+  color: #4169E1;
+}
+
+.emotion-anger {
+  color: #FF4500;
+}
+
+.emotion-fear {
+  color: #800080;
+}
+
+.emotion-surprise {
+  color: #00BFFF;
+}
+
+.emotion-disgust {
+  color: #32CD32;
+}
+
+.emotion-neutral {
+  color: #C0C0C0;
+}
+
+.video-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.video-container:hover {
+  transform: scale(1.02);
+}
+
+.text-input-container {
+  transition: all 0.3s ease;
+}
+
+.text-input-container:focus-within {
+  transform: scale(1.02);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
